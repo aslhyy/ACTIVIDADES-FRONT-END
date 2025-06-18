@@ -1,0 +1,147 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.container {
+    background-color: whites;
+    width: 390px;
+    height: 360px;
+    box-shadow: 9px 10px 10px 1px #c6c6c6;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    border: solid 2.5px rgb(192, 192, 192);
+    border-radius: 7px;
+    padding: 20px 27px 40px 27px;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+}
+
+p {
+    color: grey;
+    font-size: 20px;
+}
+
+.texto {
+    display: flex;
+    color: green;
+    margin-bottom: -15px;
+    
+}
+
+.antes{
+    margin-right: 10px;
+}
+
+.precio{
+        text-decoration: 1.5px line-through;
+
+}
+
+.ahora{
+    color: rgb(199, 4, 4);
+}
+
+.comprar{
+    width: 390px;
+    height: 47px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: #007aff;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.cancelar{
+    width: 390px;
+    height: 47px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color:  #007aff;
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+.valor{
+    margin-top: -18px;
+    font-size: 17px;    
+}
+
+.formulario{
+    background-color: whites;
+    width: 390px;
+    height: 300px;
+    box-shadow: 9px 10px 10px 1px #c6c6c6;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    border: solid 2.5px rgb(192, 192, 192);
+    border-radius: 7px;
+    padding: 30px 30px 50px 30px;
+
+}
+
+#nombre{
+    font-family: "Roboto", sans-serif;
+    width: 290px;
+    height: 14px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#email{
+    font-family: "Roboto", sans-serif;
+    width: 290px;
+    height: 14px;
+    padding: 5px;
+    margin-left: 16px;
+    font-size: 15px;
+}
+
+
+#telefono{
+    font-family: "Roboto", sans-serif;
+    width: 290px;
+    height: 14px;
+    padding: 5px;
+    margin-left: -5px;
+    font-size: 15px;
+}
+
+#direccion{
+    font-family: "Roboto", sans-serif;
+    width: 289px;
+    height: 40px;
+    padding: 5px;
+    margin-left: -10px;
+    font-size: 15px;
+}
+
+#pago{
+    font-family: "Roboto", sans-serif;
+    width: 250px;
+    height: 40px;
+    margin-left: -5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+label{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #c76b6b;
+}

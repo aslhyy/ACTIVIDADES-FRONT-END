@@ -1,0 +1,140 @@
+/* Reset y estilos base */
+* {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* Incluye el borde y padding dentro del ancho total */
+    margin: auto; /* Centra horizontalmente todos los elementos (¡nota! esto puede ser conflictivo) */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto al cuerpo */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    color: #000; /* Color del texto en negro */
+    margin-right: 400px; /* Desplaza todo el body hacia la izquierda (puede usarse para diseño específico) */
+}
+
+/* Estilos del encabezado */
+header {
+    width: 975px; /* Ancho fijo del header */
+    padding: 15px 40px 5px; /* Espaciado superior, laterales e inferior */
+    display: flex; /* Usa flexbox para distribuir elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+}
+
+.nav-container {
+    display: flex; /* Flexbox para alinear logo, menú e ícono */
+    align-items: center; /* Centra verticalmente los hijos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilo del logo */
+.logo {
+    height: 90px; /* Altura del logo */
+    margin-right: 70px; /* Espacio a la derecha del logo */
+}
+
+/* Navegación */
+nav {
+    flex-grow: 1; /* Permite que nav crezca ocupando el espacio restante */
+}
+
+.nav-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Distribuye los ítems horizontalmente */
+    gap: 30px; /* Espacio entre cada ítem */
+    align-items: center; /* Centrado vertical */
+    position: relative; /* Para posicionar el pseudo-elemento ::after */
+    margin-right: 10px; /* Margen derecho de la lista */
+}
+
+.nav-links a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Texto en negro */
+    font-weight: 700; /* Texto en negrita */
+    font-size: 12px; /* Tamaño pequeño */
+    text-transform: uppercase; /* Convierte texto a mayúsculas */
+}
+
+/* Estilo especial para el enlace de "SALE" */
+.nav-links a.sale {
+    color: #e2001a; /* Rojo fuerte para destacar promociones */
+}
+
+/* Separador rojo a la derecha del menú */
+.nav-links::after {
+    content: ""; /* Genera contenido vacío */
+    position: absolute; /* Posición absoluta respecto al contenedor nav-links */
+    justify-content: center; /* Centrado horizontal (no tiene efecto aquí en realidad) */
+    height: 20px; /* Alto del separador */
+    width: 2px; /* Grosor del separador */
+    background-color: #e2001a; /* Color rojo del separador */
+    right: -10px; /* Lo posiciona hacia la derecha */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Alineación vertical exacta */
+}
+
+/* Ícono de búsqueda */
+.search {
+    height: 18px; /* Tamaño del ícono */
+    margin-left: 20px; /* Espacio a la izquierda */
+}
+
+/* Contador del carrito */
+.cart-count {
+    color: #e2001a; /* Rojo para destacar cantidad */
+    font-weight: bold; /* Texto en negrita */
+    margin-left: 3px; /* Separación del texto anterior */
+    font-size: 12px; /* Tamaño del contador */
+}
+
+/* Sección del banner principal */
+.hero {
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    padding: 0; /* Sin padding */
+    background-color: #f4f4f4; /* Fondo igual al del body */
+    width: 935px; /* Ancho fijo */
+}
+
+.hero-banner {
+    width: 935px; /* Mismo ancho que el contenedor */
+    height: auto; /* Altura proporcional */
+    display: block; /* Para que no haya espacio debajo */
+}
+
+/* Galería de productos */
+.gallery {
+    display: flex; /* Muestra productos en línea */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    gap: 35px; /* Espacio entre productos */
+    padding: 20px 0 60px; /* Espaciado superior, sin lateral, inferior amplio */
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+.gallery .item {
+    text-align: flex-start; /* Alineación no válida, debería ser `left` */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: 400; /* Peso regular */
+    width: 180px; /* Ancho de cada item */
+    margin-left: 10px; /* Margen izquierdo para separación */
+}
+
+.gallery img {
+    max-width: 150px; /* Imagen no más ancha de 150px */
+    height: auto; /* Mantiene proporción */
+    display: block; /* Elimina espacio blanco debajo de imagen */
+    margin: 0 auto 10px; /* Centrada horizontalmente con margen inferior */
+}
+
+.gallery span {
+    color: #e2001a; /* Precio en color rojo */
+    font-weight: 700; /* Negrita */
+    font-size: 14px; /* Tamaño del precio */
+}
+
+.gallery .label {
+    color: #000; /* Color del texto del label */
+    font-weight: 500; /* Seminegrita */
+    margin-top: 5px; /* Margen superior */
+}
